@@ -24,11 +24,8 @@ nav{
 
 }
 nav ul{
-    display:flex;
-    align-items: center;
-    
+    display:flex;  
 }
-
 
 nav li{
     list-style: none;
@@ -84,7 +81,6 @@ nav box p{
 .banner{
     display: flex;
     justify-content: space-between;
-
     
 }
 .left-side-banner{
@@ -308,3 +304,37 @@ footer{
     margin-top: 40px;
 }
 
+/*responsive media queries*/
+@media screen and (max-width: 576px) {
+    /*nav responsive*/
+    nav{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    nav .logo{
+        padding-left: 680px;
+        padding-top: 100px;
+        
+
+    }
+    nav ul{
+        flex-direction: column;
+        
+    }
+    nav li{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .menu{
+        padding-left:680px;
+        padding-bottom: 20px;
+    }
+    /*banner responsive*/
+    .banner{
+        flex-direction: column;
+        
+    }
+    
+    
+}
