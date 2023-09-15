@@ -147,6 +147,9 @@ background-clip: text;
 }
 /**/
 
+.online-game{
+    
+}
 .game-title-section{
  text-align: center;
  margin: 60px auto 20px;
@@ -185,6 +188,7 @@ background-clip: text;
  display: flex;
  justify-content: flex-end;
  margin-top: 100px;
+ 
     
 }
 
@@ -208,14 +212,56 @@ background-clip: text;
     width: 350px;
 }
 .more-games-image{
-    
+    display: grid;
     margin-right: 100px;
 }
 .big-image{
     width: 400px;
     height: 450px;
+    padding-left: 90px;
 }
 .small-image{
     height: 200px;
     width: 180px;
+    position: relative;
+    bottom: 80%;
+}
+/*game list section*/
+.game-list{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    padding: 100px 100px;
+    
+
+}
+
+
+.game-list-1{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.game-list-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    display:flex;
+    background-color: #FFF;
+    width: 180px;
+    height: 50px;
+    
+}
+.large-text{
+    width: 210px;
+}
+.card p{
+    
+    font-size: 15px;
+    font-weight: 400;
+    margin: auto 5px;
+
+}
+.card img{
+    height: 50px;
+    width: 50px;
 }
