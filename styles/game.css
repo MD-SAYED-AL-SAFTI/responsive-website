@@ -67,6 +67,7 @@ nav box p{
 .logo{
     display: flex;
     gap: 20px; 
+
 }
 
 
@@ -145,11 +146,8 @@ background-clip: text;
     border: 0;
     margin-left: 10px;
 }
-/**/
+/*Main Content Styles*/
 
-.online-game{
-    
-}
 .game-title-section{
  text-align: center;
  margin: 60px auto 20px;
@@ -183,18 +181,17 @@ background-clip: text;
     justify-content: space-between;
     padding: 0 200px;
 }
-/**/
+/*more game section styles*/
 .more-games{
  display: flex;
  justify-content: flex-end;
  margin-top: 100px;
- 
     
 }
 
 .more-games-title {
     
-      height: 650px;
+      height: 500px;
       width: 500px; 
       padding-top: 100px;  
 }
@@ -226,30 +223,27 @@ background-clip: text;
     position: relative;
     bottom: 80%;
 }
-/*game list section*/
+/*game list section styles*/
 .game-list{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
-    padding: 100px 100px;
-    
+    padding: 100px 100px;   
 
 }
-
 
 .game-list-1{
     display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
+    row-gap: 10px;
     
 }
-.game-list-2{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+
 .card{
     display:flex;
     background-color: #FFF;
     width: 180px;
     height: 50px;
-    
+    border-radius: 40px;
+       
 }
 .large-text{
     width: 210px;
@@ -265,3 +259,52 @@ background-clip: text;
     height: 50px;
     width: 50px;
 }
+
+/*Footer Styles*/
+footer{
+    background: #0B0223;
+}
+.footer{
+    padding: 100px 200px;
+}
+.footer-logo{
+    padding-left: 300px;
+}
+.white-text{
+    color: #FFF;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 70px;
+}
+
+.social-share{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 70px;
+    padding-left: 50px;
+
+}
+.pages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 auto;
+    margin-top: 40px;
+}
+
