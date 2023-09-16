@@ -6,15 +6,20 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+
+    
+
 .theme-color{
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
 }
+
 .special-text{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 /* nav related styles */
+
 nav{
      display: flex;
      justify-content: space-between;
@@ -29,8 +34,7 @@ nav ul{
 }
 
 nav li{
-    list-style: none;
-    
+    list-style: none;    
 }
 
 nav a{
@@ -89,8 +93,8 @@ nav box p{
     background-size: 580px;
     width: 580px;
     height: 580px;
-
 }
+
 .banner-text{
     padding-left: 100px;
     padding-top: 150px;
@@ -99,14 +103,15 @@ nav box p{
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
-}
-.second-title{
+}   
+
+.theme-color-2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     font-size: 95px;
     font-weight: 800;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .icon-text{
     display: flex;
@@ -125,7 +130,7 @@ background-clip: text;
     
 }
 .button1{
-    color: #FFF;
+    
     font-size: 20px;
     font-weight: 600;
     padding: 15px 25px;
@@ -143,28 +148,33 @@ background-clip: text;
     border: 0;
     margin-left: 10px;
 }
+ .button2 a{
+    text-decoration: none;
+    color:#FFF;
+}
+.button1 a{
+    text-decoration: none;
+    color:#FFF;
+}
 /*Main Content Styles*/
 
 .game-title-section{
  text-align: center;
  margin: 60px auto 20px;
+ align-items: center;
 }
 .game-title{
     color: #0B0223;
     font-size: 48px;
     font-weight: 700;
 }
-.special-text2{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .game-description{
     color: #534C64;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    
 }
 .video-game img{
     height: 300px;
@@ -240,7 +250,12 @@ background-clip: text;
     width: 180px;
     height: 50px;
     border-radius: 40px;
-       
+    border: 1px solid white;
+         
+}
+.card:hover{
+    color: #FF42A5;
+    border-color: #FF42A5;
 }
 .large-text{
     width: 210px;
@@ -252,17 +267,22 @@ background-clip: text;
     margin: auto 5px;
 
 }
+
+
 .card img{
     height: 50px;
     width: 50px;
 }
 
 /*Footer Styles*/
-footer{
-    background: #0B0223;
-}
+
 .footer{
+    background: #0B0223;
     padding: 100px 200px;
+}
+.footer a{
+    text-decoration: none;
+    color:white;
 }
 .footer-logo{
     padding-left: 300px;
@@ -307,17 +327,15 @@ footer{
 
 /*responsive media queries*/
 @media screen and (max-width: 576px) {
+    
     /*nav responsive*/
+    
     nav{
         flex-direction: column;
         height: auto;
-        
+        padding-top: 40px;
     }
-    nav .logo{
-      
-        
 
-    }
     nav ul{
         flex-direction: column;
         
@@ -333,61 +351,199 @@ footer{
     /*banner responsive*/
     .banner{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+   .banner-text{
+       padding-top: 80px;
+       padding-left: 80px;
+
+    }
+
     .left-side-banner{
+        background-size: 400px;
+        width: 400px;
+        height: 400px;
+        align-items: center;
+    
+    }
+    
+    .first-title{
         
+        font-size: 30px;
+        
+    }
+    .theme-color-2{
+        font-size: 60px;
+           
+    }
+    .icon-text{
+        font-size: 15px;
         
     }
     .right-side-banner img{
-        size: 100%;
-        margin-right: 0;       
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        
     }
-    /*main content style*/
+    .button-primary{
+        margin-top: 20px;
+        
+    }
+    .button1{
+        
+        font-size: 15px;
+        
+        padding: 10px 20px;
+
+    
+    }
+    .button2{
+        
+        font-size: 15px;
+        
+        padding: 10px 20px;
+       
+    }
+    /*main content responsive style*/
     .game-collection{
         flex-direction: column;
         justify-content: center;
-        padding: 0;
+        align-items: center;
+        padding: 10px auto;
     }
+   
+    .game-title{
+           
+           font-size: 35px;
+           
+    }
+           
+    .game-description{
+        
+           font-size: 15px;
+           text-align: center;
+    }
+    .video-game img{
+           height: 400px;
+           width: 300px;
+    }
+    .video-game p{
+           width: 298px;
+    }
+     
+           
     
-    /*more games style*/
+    /*more games responsive style*/
     .more-games{
         flex-direction: column;
         justify-content: center;
-        margin-top: 100px;
+        align-items: center;
+
+        margin-top: 25px;
     }
     .more-games-image{
     
         margin-right: 0;
+        padding-left: 20px;   
 
     }
-    /*game list style*/
+       
+    .more-games-title {
+           
+             height: 400px;
+             width: auto; 
+             padding-left: 80px;       
+           
+    }
+       
+    .title1{
+           font-size: 35px;
+         
+    }
+    .more-games-description{
+           
+           font-size: 15px;         
+           width: 80%;
+    }
+    .more-games-image{
+           display: grid;
+           width:100%
+    }
+    .big-image{
+           width: 75%;
+           height: 400px;
+           padding-left: 10%;
+    }
+       .small-image{
+           height: 150px;
+           width: 130px;
+           position: relative;
+           bottom: 80%;
+    }
+    /*game list responsive style*/
     .game-list{
-        padding:0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
     }
     .game-list-1{
         
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
     } 
-    /*footer style*/ 
-    footer{
-        margin: 0;
-    }  
+    
+    .card{
+       
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+           
+    }
+    .card p{
+        
+        font-size: 10px;
+        font-weight: 400;
+        margin: auto 3px;
+    }
+    .card img{
+        height: 40px;
+        width: 40px;
+    }
+    
+    /*footer responsive style*/ 
+    
+     
     .footer{
         padding: 0;
         
     }
-    .footer-logo{
-        padding-left: 0;
-    }
+    
     .footer-menu{
         grid-template-columns: repeat(3, 1fr);
+        font-size: 15px;
+        row-gap: 10px;        
+        padding-top: 50px;
     }
     .social-share{
         grid-template-columns: repeat(3, 1fr);
-        padding-left: 0;
+        padding-left: 60px;        
+        row-gap: 10px;
+        padding-top: 50px;
     }
     .pages{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);        
+        padding-top: 50px;
     }
+    
+    .footer-logo{
+        padding-left: 80px;
+        padding-top: 30px;
+    }
+    .copyright{
+        padding-bottom: 40px;
+    }
+    
            
 }
