@@ -14,7 +14,7 @@ body{
 }
 
 .special-text{
-    background-clip: text;
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -83,6 +83,7 @@ nav box p{
     margin-right: 15px;
 }
 /*Banner styles*/
+
 .banner{
     display: flex;
     justify-content: space-between;
@@ -109,7 +110,6 @@ nav box p{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     font-size: 95px;
     font-weight: 800;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -160,7 +160,8 @@ nav box p{
 
 .game-title-section{
  text-align: center;
- margin: 60px auto 20px;
+ margin-top: 60px;
+ margin-bottom: 20px;
  align-items: center;
 }
 .game-title{
@@ -362,10 +363,10 @@ nav box p{
     }
 
     .left-side-banner{
-        background-size: 400px;
-        width: 400px;
-        height: 400px;
-        align-items: center;
+        background-size: 380px;
+        width: 380px;
+        height: 380px;
+        
     
     }
     
@@ -394,10 +395,8 @@ nav box p{
     }
     .button1{
         
-        font-size: 15px;
-        
+        font-size: 15px; 
         padding: 10px 20px;
-
     
     }
     .button2{
@@ -412,12 +411,13 @@ nav box p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px auto;
+        row-gap: 10px;
     }
    
     .game-title{
            
-           font-size: 35px;
+           font-size: 25px;
+           font-weight: 700;
            
     }
            
@@ -453,14 +453,16 @@ nav box p{
        
     .more-games-title {
            
-             height: 400px;
-             width: auto; 
-             padding-left: 80px;       
-           
+         height: 300px;
+         width: auto; 
+         padding-left: 80px;   
+         padding-top: 25px;   
+       
     }
        
     .title1{
            font-size: 35px;
+           line-height: 40px;
          
     }
     .more-games-description{
